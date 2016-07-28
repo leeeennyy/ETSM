@@ -13,12 +13,12 @@ public class TextImporter : MonoBehaviour
     public int currentLine;
     public int endAtLine;
 
-    public MovePlayer player;
+    public Player player;
 
     // Use this for initialization
     void Start()
     {
-        player = FindObjectOfType<MovePlayer>();
+        player = FindObjectOfType<Player>();
 
         if (textFile != null)
         {
