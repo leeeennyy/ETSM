@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0F81E3CE-0338-5F43-1D60-FA97B39B0A77}</ProjectGuid>
+    <ProjectGuid>{24E30021-1CE3-C49C-5A50-B2BE04A9C704}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.3.6f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -63,22 +63,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ETSM.CSharp.Plugins.csproj">
-      <Project>{24E30021-1CE3-C49C-5A50-B2BE04A9C704}</Project>
-      <Name>ETSM.CSharp.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Scripts\CanvasManager.cs" />
-    <Compile Include="Assets\Scripts\GlobalStateManager.cs" />
-    <Compile Include="Assets\Scripts\Interaction Tree\Interactable.cs" />
-    <Compile Include="Assets\Scripts\Interaction Tree\Nodes\DialogueNode.cs" />
-    <Compile Include="Assets\Scripts\Interaction Tree\Nodes\RootNode.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerCollisionManager.cs" />
-    <Compile Include="Assets\Scripts\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\TextImporter.cs" />
-    <Compile Include="Assets\Scripts\UIManager.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\ConnectionTypes.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\Node.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeCanvas.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeCanvasManager.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeCanvasSceneSave.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditor.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditorCallbackReceiver.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditorGUI.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditorInputControls.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditorInputSystem.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditorSaveManager.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeEditorState.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeInput.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeKnob.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeOutput.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Framework\NodeTypes.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Nodes\Example\AllAroundNode.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Nodes\Example\ExampleNode.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Nodes\Example\FlowNode.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Nodes\FloatCalc\CalcNode.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Nodes\FloatCalc\DisplayNode.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Nodes\FloatCalc\InputNode.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\RTCanvasCalculator.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\RuntimeNodeEditor.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\EditorLoadingControl.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\GUI\GUIScaleUtility.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\GUI\OverlayGUI.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\GUI\RTEditorGUI.cs" />
+    <Compile Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\ResourceManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Node_Editor\Node_Editor\Resources\LineShader.shader" />
