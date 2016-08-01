@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     }
 
-    void FixedUpdate()
+    void Update()
     {
         //decide what the player can do
         switch (State)
