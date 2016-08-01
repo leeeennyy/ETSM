@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\Scripts\GlobalStateManager.cs" />
     <Compile Include="Assets\Scripts\Interaction Tree\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Interaction Tree\Nodes\ConditionNode.cs" />
     <Compile Include="Assets\Scripts\Interaction Tree\Nodes\DialogueNode.cs" />
     <Compile Include="Assets\Scripts\Interaction Tree\Nodes\RootNode.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
