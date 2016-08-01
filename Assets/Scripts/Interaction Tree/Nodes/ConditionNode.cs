@@ -5,7 +5,7 @@ using NodeEditorFramework;
 [Node(false, "Condition Node")]
 public class ConditionNode : Node {
     public override string GetID { get { return "ConditionNode"; } }
-    public string Condition = "";
+    public string Condition = ""; //expression to be evaluated to take Next, otherwise take Else
 
     public override Node Create(Vector2 pos) {
         ConditionNode node = CreateInstance<ConditionNode>();
@@ -15,6 +15,7 @@ public class ConditionNode : Node {
         node.CreateInput("Previous", "Default", NodeSide.Top);
 
         node.CreateOutput("Else", "Default", NodeSide.Right);
+
         node.CreateOutput("Next", "Default", NodeSide.Bottom);
 
         return node;
