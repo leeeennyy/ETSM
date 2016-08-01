@@ -25,3 +25,12 @@ public class RootNode : Node {
         GUILayout.EndHorizontal();
     }
 }
+
+
+public class DefaultLink : IConnectionTypeDeclaration {
+    public string Identifier { get { return "Default"; } }
+    public Type Type { get { return typeof(void); } }
+    public Color Color { get { return Color.red; } }
+    public string InKnobTex { get { return "Textures/In_Knob.png"; } }
+    public string OutKnobTex { get { return "Textures/Out_Knob.png"; } }
+}
