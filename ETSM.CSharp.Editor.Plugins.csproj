@@ -88,6 +88,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="MoonSharp.Interpreter">
+      <HintPath>Assets\Plugins\MoonSharp\net35\MoonSharp.Interpreter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ETSM.CSharp.Plugins.csproj">
@@ -105,6 +108,7 @@
     <Compile Include="Assets\Plugins\Node_Editor\Editor\Node_Editor\RTNE_InspectorGUI.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Plugins\MoonSharp\net35\MoonSharp.Interpreter.xml" />
     <None Include="Assets\Plugins\Node_Editor\Node_Editor\Resources\LineShader.shader" />
     <None Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\link.xml" />
   </ItemGroup>

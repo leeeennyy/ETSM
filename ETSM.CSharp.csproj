@@ -61,6 +61,9 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="MoonSharp.Interpreter">
+      <HintPath>Assets\Plugins\MoonSharp\net35\MoonSharp.Interpreter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ETSM.CSharp.Plugins.csproj">
@@ -83,6 +86,7 @@
     <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Plugins\MoonSharp\net35\MoonSharp.Interpreter.xml" />
     <None Include="Assets\Plugins\Node_Editor\Node_Editor\Resources\LineShader.shader" />
     <None Include="Assets\Plugins\Node_Editor\Node_Editor\Utilities\link.xml" />
   </ItemGroup>
